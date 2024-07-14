@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
   const [active, setActive] = useState(false);
@@ -17,7 +17,9 @@ export default function Navbar() {
     }
   };
 
-  window.addEventListener("scroll", changeBanckground);
+  useEffect(() => {
+    window.addEventListener("scroll", changeBanckground);
+  }, []);
 
   return (
     <nav className="max-w-7xl fixed top-4 mx-auto inset-x-0 z-50 w-[95%] lg:w-full">
