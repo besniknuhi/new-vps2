@@ -115,15 +115,13 @@ export default function Navbar() {
         </div>
       </div>
       <div className="flex h-full w-full items-center lg:hidden ">
-        <div className="flex justify-between bg-white dark:bg-neutral-900 items-center w-full rounded-full px-2.5 py-1.5 transition duration-200">
+        <div className="flex justify-between bg-white items-center w-full rounded-full px-2.5 py-1.5 transition duration-200">
           <Link
             href="/"
-            className="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
+            className="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1 relative z-20"
           >
-            <div className="h-5 w-6 bg-black dark:bg-white rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm"></div>
-            <span className="font-medium text-black dark:text-white">
-              Every AI
-            </span>
+            <div className="h-5 w-6 bg-black rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm"></div>
+            <span className="font-medium text-black">Every AI</span>
           </Link>
           <div className="lg:hidden">
             <button
@@ -134,19 +132,19 @@ export default function Navbar() {
                 className={`
                   ${
                     active ? "rotate-45 translate-y-[6px]" : ""
-                  } block bg-black dark:bg-white w-[20px] h-[2px] m-1 duration-300`}
+                  } block bg-black w-[20px] h-[2px] m-1 duration-300`}
               ></span>
               <span
                 className={`
                   ${
                     active ? "opacity-0" : "opacity-100"
-                  } block bg-black dark:bg-white w-[20px] h-[2px] m-1 duration-300`}
+                  } block bg-black w-[20px] h-[2px] m-1 duration-300`}
               ></span>
               <span
                 className={`
                   ${
                     active ? "-rotate-45 translate-y-[-6px]" : ""
-                  } block bg-black dark:bg-white w-[20px] h-[2px] m-1 duration-300`}
+                  } block bg-black w-[20px] h-[2px] m-1 duration-300`}
               ></span>
             </button>
             {/* <div className="fixed inset-0 bg-white dark:bg-black z-50 flex flex-col items-start justify-start space-y-10  pt-5  text-xl text-zinc-600  transition duration-200 hover:text-zinc-800">

@@ -43,7 +43,7 @@ export default function Infrastructure() {
                           {card.text}
                         </p>
                         <Link
-                          href="#plans"
+                          href="/pricing"
                           className="border border-black w-full mt-auto text-[#525252] py-3 px-8 inline-flex justify-center rounded-full font-bold hover:bg-[#E5E5E5] duration-300"
                         >
                           View Plans

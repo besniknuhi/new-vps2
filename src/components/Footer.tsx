@@ -12,7 +12,7 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="max-w-screen-2xl lg:px-12 sm:pt-[60px] mx-auto pb-5">
+    <footer className="max-w-[1440px] lg:px-12 sm:pt-5 mx-auto">
       <div className="relative overflow-hidden rounded-[40px] sm:p-5 sm:pb-0">
         <Image
           src={frameC}
@@ -20,7 +20,7 @@ export default function Footer() {
           className="absolute inset-x-0 top-0 hidden w-full sm:block"
         />
         <div className="relative p-4 overflow-hidden lg:p-20 rounded-[20px] bg-dark-1">
-          <div className="relative flex flex-wrap justify-between gap-10 border-b border-b-[rgb(0,57,61)]">
+          <div className="relative flex flex-wrap justify-between gap-10 border-b border-b-black">
             <div className="flex flex-col gap-8 pb-6">
               <Link href="/" className="w-auto h-14">
                 <Image src={icon1} alt="brand icon" className="w-full h-full" />
@@ -53,7 +53,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="w-full max-w-2xl min-h-[390px] flex flex-col justify-between gap-12">
+            <div className="w-full max-w-2xl min-h-[300px] flex flex-col justify-between gap-12">
               <div className="flex flex-col w-full gap-6 sm:flex-row sm:justify-between sm:flex-wrap">
                 <div className="flex flex-col gap-5">
                   <p className="text-lg font-semibold sm:text-xl text-black">
@@ -107,7 +107,7 @@ export default function Footer() {
                   </Link>
                 </div>
               </div>
-              <div className="lg:pt-8 lg:px-8 lg:pb-10 p-3 sm:p-5 rounded-t-[20px] border border-black border-b-0 flex flex-col gap-3">
+              <div className="lg:pt-8 lg:px-8 lg:pb-6 p-3 sm:p-5 rounded-t-[20px] border border-black border-b-0 flex flex-col gap-3">
                 <p className="text-sm font-semibold sm:text-lg text-[#525252]">
                   Have a sales question or looking for support?
                 </p>
@@ -125,7 +125,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="flex items-center justify-end gap-5 pt-6">
+          <div className="flex items-center justify-end pt-4">
             <p className="text-xs font-medium sm:text-base text-[#525252]">
               &#169; 2024 [insert name] All rights reserved.
             </p>

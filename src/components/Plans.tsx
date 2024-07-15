@@ -5,42 +5,31 @@ import { plans } from "@/assets/planData";
 import { checkmark, arrowR } from "@/assets/images";
 
 const buttons = [
-  { id: 1, text: "Monthly", discount: false },
-  { id: 2, text: "Quarterly", discount: true, amount: 5 },
-  { id: 3, text: "Yearly", discount: true, amount: 10 },
+  { id: 1, text: "Monthly" },
+  { id: 2, text: "Yearly" },
 ];
 
 export default function Plans() {
   return (
     <section id="plans" className="relative max-w-[1440px] mx-auto py-20">
       <div className="px-4 sm:px-9 pt-20 pb-12 sm:pt-[100px] max-w-screen-2xl mx-auto relative flex flex-col gap-10 sm:gap-20">
-        <div className="flex flex-wrap items-end justify-between gap-5 xl:flex-nowrap sm:px-11">
+        <div className="flex flex-col flex-wrap items-center text-center justify-between gap-20 xl:flex-nowrap sm:px-11">
           <div>
-            <p className="text-base font-bold text-neutral-700">
-              Scalable. Affordable. Flexible.
-            </p>
             <h1 className="mt-2 mb-8 text-4xl font-semibold sm:text-5xl">
-              Choose a plan that works for you
+              Simple pricing for your ease
             </h1>
-            <p className="text-base font-medium sm:text-lg text-[#525252]">
-              Our tailored plans are designed to grow with you. Opt for longer
-              commitments and enjoy <br /> exclusive discounts on our plans.
+            <p className="inline-block sm:text-lg text-[#525252]">
+              Our tailored plans are designed to grow with you. <br /> Opt for
+              longer commitments and enjoy exclusive discounts on our plans.
             </p>
           </div>
-          <div className="flex items-center gap-2 p-2 overflow-x-auto border rounded-full border-muted bg-dark-2 snap-x snap-mandatory border-black">
+          <div className="flex items-center p-2 rounded-sm">
             {buttons.map((button) => (
               <button
                 key={button.id}
-                className="text-sm font-medium text-light-1 py-3 lg:text-lg border rounded-full relative min-w-max flex items-center gap-1 snap-start snap-always border-transparent hover:bg-neutral-100  duration-300"
+                className="text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center hover:bg-neutral-100 duration-300"
               >
                 {button.text}
-                {button.discount ? (
-                  <span className="text-xs font-medium">
-                    (<span className="text-grey">-{button.amount}%</span>)
-                  </span>
-                ) : (
-                  ""
-                )}
               </button>
             ))}
           </div>
@@ -55,7 +44,7 @@ export default function Plans() {
                     key={plan.id}
                     className="mx-auto pt-px px-px rounded-[32px] mb-8 xl:first:rounded-tl-[32px] xl:last:rounded-tr-[32px] max-w-sm sm:max-w-xs w-full xl:max-w-xs bg-gradient-to-b from-[#D5D5D5] to-transparent"
                   >
-                    <div className="relative flex flex-col bg-[#F5F5F5] w-full h-full px-4 py-12 overflow-hidden rounded-[32px] sm:px-6  !xl:group-first:rounded-tl-[32px] !xl:group-last:rounded-tr-[32px]">
+                    <div className="relative flex flex-col bg-[#F5F5F5] w-full h-full px-4 py-12 overflow-hidden rounded-[32px] sm:px-6">
                       <div className="flex flex-col gap-1">
                         <p className="text-base font-semibold sm:text-xl">
                           {plan.title}
@@ -67,12 +56,12 @@ export default function Plans() {
                               .{plan.priceCents}
                             </small>
                           </p>
-                          <span className="font-medium text-[#525252] text-base">
+                          <span className="font-medium text-[#525252]">
                             /month
                           </span>
                         </div>
                       </div>
-                      <span className="block w-full h-px mt-6 mb-8 bg-gradient-to-r from-transparent via-[rgb(101,159,159)] to-transparent"></span>
+                      <span className="block w-full h-px mt-6 mb-8 bg-gradient-to-r from-transparent via-black to-transparent"></span>
                       <ul className="flexflex-col gap-3 mb-12 text-[#525252]">
                         <li className="flex items-center gap-2 font-medium text-primary-2 text-base">
                           <Image src={checkmark} alt="checkmark icon"></Image>
