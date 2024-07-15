@@ -6,7 +6,7 @@ import { cards, opSystems } from "@/assets/infrastructureData";
 export default function Infrastructure() {
   return (
     <section className="max-w-[1440px] mx-auto xl:px-20 pt-20 pb-32">
-      <div className="p-px rounded-[30px] overflow-hidden bg-gradient-to-b from-[#F5F5F5] to-transparent">
+      <div className="p-px rounded-[30px] overflow-hidden bg-gradient-to-b from-neutral-50 to-transparent">
         <div className="rounded-[30px] w-full px-4 lg:px-14 pt-14 pb-20">
           <h2 className="mb-16 text-4xl font-semibold text-center sm:text-5xl">
             Maximize your infrastructure efficiency
@@ -27,7 +27,7 @@ export default function Infrastructure() {
                       key={card.id}
                       className="p-px bg-gradient-to-b from-[#D5D5D5] to-transparent rounded-[30px] overflow-hidden"
                     >
-                      <div className="px-6 py-8 rounded-[30px] h-full flex flex-col bg-[#F5F5F5]">
+                      <div className="px-6 py-8 rounded-[30px] h-full flex flex-col bg-neutral-50">
                         <div className="inline-flex items-center gap-4">
                           <Image src={card.icon} alt="icon" />
                           <div className="flex flex-col gap-1">

@@ -56,8 +56,8 @@ export default function ChooseUs() {
                 processing power and lightning fast response times.
               </p>
             </div>
-            <div className="p-px overflow-hidden rounded-xl bg-[#F5F5F5]">
-              <div className="py-4 px-6 bg-[#F5F5F5] rounded-xl">
+            <div className="p-px overflow-hidden rounded-xl bg-neutral-50">
+              <div className="py-4 px-6 rounded-xl">
                 <Link href="" target="_blank">
                   <Image
                     src={trustIcon}
@@ -82,7 +82,7 @@ export default function ChooseUs() {
                 key={card.id}
                 className="p-px bg-gradient-to-b from-[#D5D5D5] to-transparent rounded-[30px] overflow-hidden"
               >
-                <div className="px-6 py-8 bg-[#F5F5F5] rounded-[30px] h-full flex flex-col bg-dark-1">
+                <div className="px-6 py-8 bg-neutral-50 rounded-[30px] h-full flex flex-col bg-dark-1">
                   <div className="inline-flex items-center gap-4">
                     <Image src={card.icon} alt="icon" />
                     <div className="flex flex-col gap-1">

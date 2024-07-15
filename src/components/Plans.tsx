@@ -1,10 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import { plans } from "@/assets/planData";
 import { checkmark, arrowR } from "@/assets/images";
+import { useState } from "react";
 
 export default function Plans() {
+  const [yearlyPayment, setYearlyPayment] = useState(false);
+
   return (
     <section id="plans" className="relative max-w-[1440px] mx-auto py-20">
       <div className="px-4 sm:px-9 pt-20 pb-12 sm:pt-[100px] max-w-screen-2xl mx-auto relative flex flex-col gap-10 sm:gap-20">
@@ -19,10 +24,28 @@ export default function Plans() {
             </p>
           </div>
           <div className="flex items-center p-2 rounded-sm">
-            <button className="text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center bg-black text-white duration-300">
+            <button
+              onClick={() => {
+                setYearlyPayment(!yearlyPayment);
+              }}
+              className={`${
+                yearlyPayment
+                  ? "bg-neutral-100 text-[#525252]"
+                  : "bg-black text-white"
+              } text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center duration-300`}
+            >
               Monthly
             </button>
-            <button className="text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center bg-neutral-100 text-[#525252]">
+            <button
+              onClick={() => {
+                setYearlyPayment(!yearlyPayment);
+              }}
+              className={`${
+                yearlyPayment
+                  ? "bg-black text-white"
+                  : "bg-neutral-100 text-[#525252]"
+              } text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center duration-300`}
+            >
               Yearly
             </button>
           </div>
@@ -36,20 +59,17 @@ export default function Plans() {
                     key={plan.id}
                     className="mx-auto pt-px px-px rounded-[32px] mb-8 xl:first:rounded-tl-[32px] xl:last:rounded-tr-[32px] max-w-sm sm:max-w-xs w-full xl:max-w-xs bg-gradient-to-b from-[#D5D5D5] to-transparent"
                   >
-                    <div className="relative flex flex-col bg-[#F5F5F5] w-full h-full px-4 py-12 overflow-hidden rounded-[32px] sm:px-6">
+                    <div className="relative flex flex-col bg-neutral-50 w-full h-full px-4 py-12 overflow-hidden rounded-[32px] sm:px-6">
                       <div className="flex flex-col gap-1">
                         <p className="text-base font-semibold sm:text-xl">
                           {plan.title}
                         </p>
                         <div className="flex items-end gap-1.5">
                           <p className="inline-flex items-end font-semibold text-6xl">
-                            ${plan.priceFull}
-                            <small className="text-xl">
-                              .{plan.priceCents}
-                            </small>
+                            ${yearlyPayment ? plan.priceY : plan.priceM}
                           </p>
                           <span className="font-medium text-[#525252]">
-                            /month
+                            /{yearlyPayment ? "year" : "month"}
                           </span>
                         </div>
                       </div>
@@ -72,7 +92,7 @@ export default function Plans() {
                         href="/store"
                         className="inline-flex py-3 px-8 font-bold items-center justify-center rounded-full border border-black text-black text-lg leading-7 hover:bg-[#E5E5E5] duration-300"
                       >
-                        Get started{" "}
+                        Add to cart{" "}
                         <Image src={arrowR} alt="arrow icon"></Image>
                       </Link>
                     </div>
@@ -111,7 +131,7 @@ export default function Plans() {
             </ul>
           </div>
           <div className="px-px pt-px rounded-t-[30px] bg-gradient-to-b from-[#D5D5D5] to-transparent overflow-hidden max-w-[600px]">
-            <div className="px-8 py-6 overflow-hidden bg-neutral-100 rounded-[30px] relative">
+            <div className="px-8 py-6 overflow-hidden bg-neutral-50 rounded-[30px] relative">
               <div className="relative">
                 <p className="text-sm font-semibold sm:text-base">
                   Can&apos;t find the perfect plan?

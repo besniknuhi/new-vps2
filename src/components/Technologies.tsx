@@ -2,9 +2,8 @@ import Image from "next/image";
 
 import {
   brandAmd,
-  brandCloud,
+  brandDebian,
   brandIntel,
-  brandAlma,
   brandUbuntu,
   brandWindows,
 } from "@/assets/images";
@@ -16,11 +15,10 @@ export default function Technologies() {
         <span className="inline-block text-wrap align-top">Technologies</span>
       </h2>
       <div className="flex gap-10 flex-wrap justify-center md:gap-40 relative h-full w-full mt-20">
-        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 sm:gap-x-3 sm:gap-y-3">
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 sm:gap-x-3 sm:gap-y-3">
           <Image src={brandAmd} alt="brand images" />
-          <Image src={brandCloud} alt="brand images" />
+          <Image src={brandDebian} alt="brand images" />
           <Image src={brandIntel} alt="brand images" />
-          <Image src={brandAlma} alt="brand images" />
           <Image src={brandUbuntu} alt="brand images" />
           <Image src={brandWindows} alt="brand images" />
         </div>

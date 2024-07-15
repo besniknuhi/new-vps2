@@ -64,7 +64,7 @@ export default function Hero() {
                 strokeWidth="0"
                 viewBox="0 0 24 24"
                 aria-hidden="true"
-                className="text-[#525252] group-hover:translate-x-1 stroke-[1px] h-3 w-3 duration-200 "
+                className="text-[#525252] group-hover:translate-x-1 stroke-[1px] h-3 w-3 duration-200"
                 height="1em"
                 width="1em"
                 xmlns="http://www.w3.org/2000/svg"

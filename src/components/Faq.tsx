@@ -49,14 +49,14 @@ export default function Faq() {
             key={acc.id}
             className="pt-px px-px bg-gradient-to-b from-[#D5D5D5] to-transparent rounded-3xl sm:rounded-[46px]"
           >
-            <div className="flex flex-col w-full p-5 overflow-hidden bg-neutral-100 sm:py-10 sm:px-5 rounded-3xl sm:rounded-[46px]">
+            <div className="flex flex-col w-full p-5 overflow-hidden bg-neutral-50 sm:py-10 sm:px-5 rounded-3xl sm:rounded-[46px]">
               <div className="flex items-center justify-between w-full gap-3 sm:gap-6 bg-transparent">
                 <h3 className="text-base font-semibold text-left text-light-1 sm:text-xl">
                   {acc.title}
                 </h3>
                 <button
                   onClick={() => acc.setButton(!acc.button)}
-                  className="border border-black rounded-full min-w-9 min-h-9 flex justify-center items-center sm:!p-3.5 hover:bg-neutral-200 duration-300"
+                  className="border border-[#D5D5D5] rounded-full min-w-9 min-h-9 flex justify-center items-center sm:!p-3.5 hover:bg-neutral-200 duration-300"
                 >
                   <Image
                     src={acc.button ? minusIcon : plusIcon}
@@ -67,8 +67,8 @@ export default function Faq() {
               <div className="sm:w-[calc(100%-54px)] sm:pr-6">
                 <p
                   className={`${
-                    acc.button ? "block opacity-100" : "hidden opacity-0"
-                  } text-sm font-medium sm:text-base text-[#525252] transition-transform duration-300`}
+                    acc.button ? "opacity-100" : "hidden opacity-0"
+                  } text-sm font-medium sm:text-base text-[#525252] transition-opacity duration-300`}
                 >
                   {acc.description}
                 </p>

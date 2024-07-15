@@ -6,7 +6,6 @@ import {
   windowsS,
   ubuntuS,
   debianS,
-  almaS,
 } from "@/assets/images";
 
 export const cards = [
@@ -54,5 +53,4 @@ export const opSystems = [
     desc: "20.04, 22.04 and 24.04 edition",
   },
   { id: 3, img: debianS, title: "Debian", desc: "11 and 12 edition" },
-  { id: 4, img: almaS, title: "Alma Linux", desc: "8 and 9 edition" },
 ];

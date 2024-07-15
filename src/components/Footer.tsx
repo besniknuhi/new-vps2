@@ -22,9 +22,6 @@ export default function Footer() {
         <div className="relative p-4 overflow-hidden lg:p-20 rounded-[20px] bg-dark-1">
           <div className="relative flex flex-wrap justify-between gap-10 border-b border-b-black">
             <div className="flex flex-col gap-8 pb-6">
-              <Link href="/" className="w-auto h-14">
-                <Image src={icon1} alt="brand icon" className="w-full h-full" />
-              </Link>
               <div>
                 <div className="flex flex-col gap-3">
                   <div className="flex gap-2 p-3 border rounded-full w-max border-black">
