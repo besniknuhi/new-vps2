@@ -29,6 +29,7 @@ export default function Navbar() {
             navbar ? "bg-neutral-100" : "bg-transparent"
           } `}
         >
+          {/* <div className="absolute inset-0 h-full w-full scroll bg-neutral-100 pointer-events-none rounded-full"></div> */}
           <div className="flex flex-row gap-2 items-center">
             <Link
               href="/"
@@ -101,66 +102,6 @@ export default function Navbar() {
                   } block bg-black w-[20px] h-[2px] m-1 duration-300`}
               ></span>
             </button>
-            <div
-              className={`${
-                active ? "block" : "hidden"
-              } lg:hidden fixed inset-0 bg-white z-50 flex flex-col items-start justify-start space-y-10 pt-5  text-xl text-zinc-600  transition duration-200 hover:text-zinc-800`}
-            >
-              <div className="flex items-center justify-between w-full px-5">
-                <Link
-                  href="/"
-                  className="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
-                >
-                  <div className="h-5 w-6 bg-black rounded-br-lg rounded-tr-sm rounded-tl-lg rounded-bl-sm"></div>
-                  <span className="font-medium text-black">Every AI</span>
-                </Link>
-                <button
-                  onClick={() => setActive(!active)}
-                  className="p-2 outline-none"
-                >
-                  <span
-                    className={`
-                  ${
-                    active ? "rotate-45 translate-y-[6px]" : ""
-                  } block bg-black w-[20px] h-[2px] m-1 duration-300`}
-                  ></span>
-                  <span
-                    className={`
-                  ${
-                    active ? "opacity-0" : "opacity-100"
-                  } block bg-black w-[20px] h-[2px] m-1 duration-300`}
-                  ></span>
-                  <span
-                    className={`
-                  ${
-                    active ? "-rotate-45 translate-y-[-6px]" : ""
-                  } block bg-black w-[20px] h-[2px] m-1 duration-300`}
-                  ></span>
-                </button>
-              </div>
-              <div className="flex flex-col items-start justify-start gap-[14px] px-8">
-                <Link href="/pricing" className="relative">
-                  <span className="block text-[26px] text-black">Pricing</span>
-                </Link>
-                <Link href="/contact" className="relative">
-                  <span className="block text-[26px] text-black">Contact</span>
-                </Link>
-              </div>
-              <div className="flex flex-row w-full items-start gap-2.5  px-8 py-4 ">
-                <Link
-                  href="/signup"
-                  className="bg-neutral-900 relative z-10 hover:bg-black/90 border border-transparent text-white text-sm md:text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center"
-                >
-                  Sign up
-                </Link>
-                <Link
-                  href="/login"
-                  className="relative z-10 bg-transparent hover:bg-gray-100 border border-transparent text-black text-sm md:text-sm transition font-medium duration-200 rounded-full px-4 py-2 flex items-center justify-center"
-                >
-                  Log in
-                </Link>
-              </div>
-            </div>
           </div>
         </div>
       </div>
