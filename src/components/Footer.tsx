@@ -1,14 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import {
-  frameC,
-  icon1,
-  twitter,
-  youtube,
-  discord,
-  arrowUR,
-} from "@/assets/images";
+import { frameC, twitter, youtube, discord, arrowUR } from "@/assets/images";
 
 export default function Footer() {
   return (
