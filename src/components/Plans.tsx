@@ -4,37 +4,29 @@ import Link from "next/link";
 import { plans } from "@/assets/planData";
 import { checkmark, arrowR } from "@/assets/images";
 
-const buttons = [
-  { id: 1, text: "Monthly" },
-  { id: 2, text: "Yearly" },
-];
-
 export default function Plans() {
   return (
     <section id="plans" className="relative max-w-[1440px] mx-auto py-20">
       <div className="px-4 sm:px-9 pt-20 pb-12 sm:pt-[100px] max-w-screen-2xl mx-auto relative flex flex-col gap-10 sm:gap-20">
-        <div className="flex flex-col flex-wrap items-center text-center justify-between gap-20 xl:flex-nowrap sm:px-11">
+        <div className="flex flex-col flex-wrap items-center text-center justify-between gap-14 sm:px-11">
           <div>
-            <h1 className="mt-2 mb-8 text-4xl font-semibold sm:text-5xl">
+            <h1 className="mt-2 mb-8 font-semibold sm:text-5xl">
               Simple pricing for your ease
             </h1>
-            <p className="inline-block sm:text-lg text-[#525252]">
+            <p className="inline-block text-[#525252]">
               Our tailored plans are designed to grow with you. <br /> Opt for
               longer commitments and enjoy exclusive discounts on our plans.
             </p>
           </div>
           <div className="flex items-center p-2 rounded-sm">
-            {buttons.map((button) => (
-              <button
-                key={button.id}
-                className="text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center hover:bg-neutral-100 duration-300"
-              >
-                {button.text}
-              </button>
-            ))}
+            <button className="text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center bg-black text-white duration-300">
+              Monthly
+            </button>
+            <button className="text-sm font-medium text-light-1 p-3 lg:text-lg rounded-sm relative min-w-max flex items-center bg-neutral-100 text-[#525252]">
+              Yearly
+            </button>
           </div>
         </div>
-        <div className="flex flex-col justify-center gap-4 sm:flex-row sm:flex-wrap sm:gap-8 sm:items-center"></div>
         <div className="relative">
           <div className="max-w-[1440px] mx-auto">
             <div>
