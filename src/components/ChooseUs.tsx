@@ -43,7 +43,7 @@ export default function ChooseUs() {
           alt="background frame"
           className="absolute inset-x-0 top-0 hidden w-full sm:block"
         />
-        <div className="relative xl:px-9 px-4 overflow-hidden py-20 rounded-[20px] bg-dark-1">
+        <div className="relative xl:px-9 px-4 overflow-hidden py-20 rounded-[20px]">
           <div className="relative flex flex-wrap items-center justify-between gap-10 mb-16 lg:gap-20">
             <div className="max-w-[798px] w-full">
               <h2 className="mb-6 text-4xl font-semibold sm:text-5xl">
@@ -58,13 +58,13 @@ export default function ChooseUs() {
             </div>
             <div className="p-px overflow-hidden rounded-xl bg-neutral-50">
               <div className="py-4 px-6 rounded-xl">
-                <Link href="" target="_blank">
+                <div>
                   <Image
                     src={trustIcon}
                     alt="trust pilot icon"
                     className="w-auto h-8 animate-pulse"
                   />
-                </Link>
+                </div>
                 <div className="flex items-center gap-2 mt-4 mb-3">
                   <Image src={starIcon} alt="star icon" />
                   <Image src={starIcon} alt="star icon" />
@@ -82,7 +82,7 @@ export default function ChooseUs() {
                 key={card.id}
                 className="p-px bg-gradient-to-b from-[#D5D5D5] to-transparent rounded-[30px] overflow-hidden"
               >
-                <div className="px-6 py-8 bg-neutral-50 rounded-[30px] h-full flex flex-col bg-dark-1">
+                <div className="px-6 py-8 bg-neutral-50 rounded-[30px] h-full flex flex-col">
                   <div className="inline-flex items-center gap-4">
                     <Image src={card.icon} alt="icon" />
                     <div className="flex flex-col gap-1">

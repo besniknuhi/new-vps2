@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <>
       {/* desktop navbar */}
-      <nav className="max-w-7xl fixed top-4 mx-auto inset-x-0 z-50 w-[95%] w-full">
+      <nav className="max-w-7xl fixed top-4 mx-auto inset-x-0 z-50 w-full">
         <div className="block w-full">
           <div
             className={`w-full flex relative justify-between px-4 py-2 rounded-full transition duration-200 ${

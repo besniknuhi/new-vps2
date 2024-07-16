@@ -12,7 +12,7 @@ export default function Footer() {
           alt="background frame"
           className="absolute inset-x-0 top-0 hidden w-full sm:block"
         />
-        <div className="relative p-4 overflow-hidden lg:p-20 rounded-[20px] bg-dark-1">
+        <div className="relative p-4 overflow-hidden lg:p-20 rounded-[20px]">
           <div className="relative flex flex-wrap justify-between gap-10 border-b border-b-black">
             <div className="flex flex-col gap-8 pb-6">
               <div>
