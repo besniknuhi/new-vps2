@@ -1,5 +1,4 @@
 import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import Login from "@/components/Login";
 
 export default function pricing() {
@@ -9,7 +8,6 @@ export default function pricing() {
       <main>
         <Login />
       </main>
-      <Footer />
     </>
   );
 }
