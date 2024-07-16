@@ -52,7 +52,7 @@ export default function Contact() {
                     htmlFor="message"
                     className="block text-sm font-medium leading-6 text-neutral-700"
                   >
-                    message
+                    Message
                   </label>
                   <div className="mt-2">
                     <textarea
