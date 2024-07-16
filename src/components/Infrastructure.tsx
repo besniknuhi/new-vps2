@@ -5,7 +5,7 @@ import { cards, opSystems } from "@/assets/infrastructureData";
 
 export default function Infrastructure() {
   return (
-    <section className="max-w-[1440px] mx-auto xl:px-20 pt-20 pb-32">
+    <section id="infra" className="max-w-[1440px] mx-auto xl:px-20 pt-20 pb-32">
       <div className="p-px rounded-[30px] overflow-hidden bg-gradient-to-b from-neutral-50 to-transparent">
         <div className="rounded-[30px] w-full px-4 lg:px-14 pt-14 pb-20">
           <h2 className="mb-16 text-4xl font-semibold text-center sm:text-5xl">

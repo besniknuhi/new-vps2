@@ -93,7 +93,7 @@ export default function ChooseUs() {
                     {card.text}
                   </p>
                   <Link
-                    href="/"
+                    href="#infra"
                     className="border border-[rgb(0,57,61)] w-full mt-auto text-[#525252] py-3 px-8 inline-flex justify-center rounded-full font-bold hover:bg-[#E5E5E5] duration-300"
                   >
                     Learn More
