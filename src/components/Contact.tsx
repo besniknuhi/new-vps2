@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
-    <section className="max-w-7xl flex flex-col justify-center h-screen  mx-auto inset-x-0 z-50 w-[95%] lg:w-full">
-      <div className="flex relative w-1/2 z-20 items-center mx-auto bg-neutral-50 justify-center px-4 py-4 lg:py-12 sm:px-6 lg:flex-none lg:px-20 rounded-3xl xl:px-24">
+    <section className="max-w-7xl flex flex-col justify-center h-screen mx-auto inset-x-0 z-50 w-full">
+      <div className="flex relative w-4/5 md:w-1/2 z-20 items-center mx-auto bg-neutral-50 justify-center px-4 py-4 lg:py-12 sm:px-6 lg:flex-none lg:px-20 rounded-3xl xl:px-24">
         <div className="mx-auto w-full max-w-md">
           <div>
             <h1 className="mt-8 text-2xl font-bold leading-9 tracking-tight">
